@@ -7,8 +7,47 @@
 
 body {
   font-family: sans-serif;
+  background: #a2bce0;
+  color: #001d4a;
 }
 
 a {
   color: black;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.header {
+  margin-bottom: 50px;
+  color: #001d4a;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.btn {
+  margin-top: 50px;
+  padding: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #294936;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #001d4a;
 }

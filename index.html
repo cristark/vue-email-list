@@ -18,25 +18,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <!-- HEADER -->
-    <header>
-
-    </header>
 
     <!-- MAIN -->
     <main>
         <section id="app">
-            <ul>
-                <li v-for="element in mailList"> {{element}} </li>
-            </ul>
+            <div class="header">Mail Generator</div>
+            <div class="container">
+                <ol>
+                    <li v-for="element in mailList"> {{element}} </li>
+                </ol>
+            </div>
+            <div class="buttons">
+                <div v-if="mailList.length > 0" @click="deleteList" class="btn">Pulisci</div>
+                <div v-else @click="mailGen" class="btn">Genera</div>
+                <!-- <input type="number" name="" id=""> -->
+            </div>
         </section>
     </main>
-
-    <!-- FOOTER -->
-    <footer>
-        
-    </footer>
 
     <!-- Link Script Javascript -->
     <script src="js/script.js" charset="utf-8"></script>
