@@ -31,7 +31,7 @@
             <div class="buttons">
                 <div v-if="mailList.length > 0" @click="deleteList" class="btn">Pulisci</div>
                 <div v-else @click="mailGen" class="btn">Genera</div>
-                <!-- <input type="number" name="" id=""> -->
+                <input type="number" min="1" max="15" v-model="mailNumber">
             </div>
         </section>
     </main>

@@ -3,11 +3,12 @@
 let app = new Vue({
     el: '#app',
     data: {
+        mailNumber: null,
         mailList: []
     },
     methods: {
         mailGen() {
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < this.mailNumber; i++) {
                 axios
                     .get('https://flynn.boolean.careers/exercises/api/random/mail')
                     .then(result => this.mailList.push(result.data.response));
